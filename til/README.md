@@ -12,6 +12,10 @@ Short dated entries for quick discoveries.
 
 ---
 
+## 2026-06-04 — Reducing permission prompts
+
+Use `Shift+Tab` to cycle permission modes (default → auto-accept edits → plan mode → auto). For finer control, add `permissions.allow` rules to `settings.json` — e.g. `"Bash(git *)"` pre-approves all git commands. There's no blanket skip flag; the allow list is the intended path. CLAUDE.md is the place for persistent behavioral instructions that survive `/compact`.
+
 ## 2026-06-04 — /context shows context window usage
 
 `/context` renders a colored grid of what's consuming your context window (history, memory, tools, etc.) with optimization suggestions and capacity warnings. Add `all` for the full breakdown. Useful before deciding to `/compact` or `/clear`.
